@@ -18,5 +18,9 @@
   {
     "outputFile": "Components/SocialNetworksCollection.razor.css",
     "inputFile": "Components/SocialNetworksCollection.razor.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/blazor.css",
+    "inputFile": "wwwroot/css/blazor.scss"
   }
 ]
