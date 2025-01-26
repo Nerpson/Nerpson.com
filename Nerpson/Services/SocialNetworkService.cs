@@ -17,10 +17,10 @@ namespace Nerpson.Services
 		/// </summary>
 		public SocialNetworkService()
 		{
-			Profiles.Add(new(SocialNetwork.Instagram, "https://instagram.com/nerpson"));
-			Profiles.Add(new(SocialNetwork.TikTok, "https://tiktok.com/@nerpson_"));
-			Profiles.Add(new(SocialNetwork.YouTube, "https://youtube.com/@Nerpson"));
-			Profiles.Add(new(SocialNetwork.X, "https://x.com/nerpson"));
+			Profiles.Add(new(SocialNetwork.Instagram, "https://go.nerpson.com/instagram"));
+			Profiles.Add(new(SocialNetwork.TikTok, "https://go.nerpson.com/tiktok"));
+			Profiles.Add(new(SocialNetwork.YouTube, "https://go.nerpson.com/youtube"));
+			Profiles.Add(new(SocialNetwork.X, "https://go.nerpson.com/x"));
 		}
 	}
 }

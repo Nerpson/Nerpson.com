@@ -13,10 +13,3 @@
 		</div>
 	}
 </div>
-
-@code {
-	private async Task OpenLinkInNewTab(string url)
-	{
-		await JSRuntime.InvokeAsync<object>("open", url, "_blank");
-	}
-}

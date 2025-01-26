@@ -19,7 +19,7 @@ namespace Nerpson.Services
 		{
 			Links.Add(new Link(
 				"First preview of The Abyss EP",
-				"https://www.instagram.com/p/DFN7r0aiyWG/",
+				"https://go.nerpson.com/ig-the-abyss-ep-preview",
 				"Check out the first preview of The Abyss EP on Instagram.",
 				"fa-brands fa-instagram"
 			));
