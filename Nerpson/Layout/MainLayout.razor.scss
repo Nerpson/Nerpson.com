@@ -1,8 +1,9 @@
 @import '../Styles/variables.scss';
 
 main {
+    position: relative;
     margin: 2*$space auto;
-    padding: $space;
+    padding: $space+5px $space $space $space;
     width: 800px;
     color: $mainTextColor;
     background-color: $panelColor;
@@ -10,9 +11,23 @@ main {
     &::before {
         content: '';
         display: block;
-        margin: -$space 0 -$space 0;
+        position: absolute;
+        inset: 0 0 0 0;
+        width: 100%;
         height: 5px;
         background: $gradient;
-        margin-bottom: $space;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: $space / 2;
     }
 }
