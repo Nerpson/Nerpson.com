@@ -39,3 +39,10 @@ msbuild.wrn
 # Minified files
 *.min.*
 *.map
+
+# Razor precompiled styles
+*.razor.css
+
+# Blazor precompiled styles
+*/wwwroot/css/app.css
+*/wwwroot/css/blazor.css
