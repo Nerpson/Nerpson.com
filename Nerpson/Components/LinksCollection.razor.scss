@@ -1,0 +1,25 @@
+@import "../styles/variables.scss";
+
+.links-collection {
+    display: flex;
+    flex-direction: column;
+    gap: 2*$space;
+
+    .link {
+        padding: $space;
+        background-color: $linkBoxColor;
+        border-left: solid 2.5px $mainColor;
+        box-shadow: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            box-shadow: 0 0 40px -20px black;
+            border-left: solid 2.5px $secondaryColor;
+        }
+
+        span {
+            font-size: 0.75rem;
+        }
+    }
+}

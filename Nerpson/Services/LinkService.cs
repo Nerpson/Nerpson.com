@@ -18,35 +18,12 @@ namespace Nerpson.Services
 		public LinkService()
 		{
 			Links.Add(new Link(
-				"Instagram",
-				"https://instagram.com/nerpson",
-				"See my photos and videos",
+				"First preview of The Abyss EP",
+				"https://www.instagram.com/p/DFN7r0aiyWG/",
+				"Check out the first preview of The Abyss EP on Instagram.",
 				"fa-brands fa-instagram"
 			));
-			Links.Add(new Link(
-				"TikTok",
-				"https://tiktok.com/@nerpson",
-				"Watch my short videos",
-				"fa-brands fa-tiktok"
-			));
-			Links.Add(new Link(
-				"SoundCloud",
-				"https://soundcloud.com/nerpson",
-				"Find all my music here",
-				"fa-brands fa-soundcloud"
-			));
-			Links.Add(new Link(
-				"YouTube",
-				"https://youtube.com/nerpson",
-				"Watch my videos",
-				"fa-brands fa-youtube"
-			));
-			Links.Add(new Link(
-				"X (Twitter)",
-				"https://x.com/nerpson",
-				"Read my thoughts in 280 characters or less",
-				"fa-brands fa-twitter"
-			));
+
 		}
 	}
 }

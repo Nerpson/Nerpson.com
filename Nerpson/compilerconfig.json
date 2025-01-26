@@ -22,5 +22,9 @@
   {
     "outputFile": "wwwroot/css/blazor.css",
     "inputFile": "wwwroot/css/blazor.scss"
+  },
+  {
+    "outputFile": "Components/LinksCollection.razor.css",
+    "inputFile": "Components/LinksCollection.razor.scss"
   }
 ]

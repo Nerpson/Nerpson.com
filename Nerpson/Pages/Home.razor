@@ -3,7 +3,7 @@
 @using Nerpson.Models
 @using Nerpson.Services
 @inject LinkService LinkService
-@inject StreamingPlatformService StreamingPlatformService
 
 <PageTitle>Home</PageTitle>
 
+<LinksCollection Links=@LinkService.Links />

@@ -1,6 +1,19 @@
-﻿<div class="links-collection">
+﻿@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="links-collection">
 	@foreach (var link in Links)
 	{
-		<a href="@link.Url" target="_blank" title=@link.Title><i class=@link.FontAwesomeIconClass></i></a>
+		<div class="link" @onclick="() => OpenLinkInNewTab(link.Url)">
+			<h3>@link.Title</h3>
+			<span>@link.Description</span>
+		</div>
 	}
 </div>
+
+@code {
+	private async Task OpenLinkInNewTab(string url)
+	{
+		await JSRuntime.InvokeAsync<object>("open", url, "_blank");
+	}
+}
