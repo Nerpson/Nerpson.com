@@ -20,7 +20,7 @@ namespace Nerpson.Services
 			Profiles.Add(new(StreamingPlatform.Spotify, "https://open.spotify.com/artist/nerpson"));
 			Profiles.Add(new(StreamingPlatform.AppleMusic, "https://music.apple.com/artist/nerpson"));
 			Profiles.Add(new(StreamingPlatform.SoundCloud, "https://soundcloud.com/nerpson"));
-			Profiles.Add(new(StreamingPlatform.YouTube, "https://youtube.com/nerpson"));
+			Profiles.Add(new(StreamingPlatform.YouTubeMusic, "https://music.youtube.com/nerpson"));
 			Profiles.Add(new(StreamingPlatform.Tidal, "https://tidal.com/browse/artist/12345678"));
 			Profiles.Add(new(StreamingPlatform.Deezer, "https://deezer.com/artist/12345678"));
 			Profiles.Add(new(StreamingPlatform.AmazonMusic, "https://music.amazon.com/artists/nerpson"));
