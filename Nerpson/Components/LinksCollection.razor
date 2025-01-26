@@ -5,8 +5,8 @@
 	@foreach (var link in Links)
 	{
 		<div class="link" @onclick="() => OpenLinkInNewTab(link.Url)">
-			<h3>@link.Title</h3>
-			<span>@link.Description</span>
+			<span class="title">@link.Title</span>
+			<span class="description">@link.Description</span>
 			<div class="bg-icon">
 				<i class=@link.FontAwesomeIconClass></i>
 			</div>

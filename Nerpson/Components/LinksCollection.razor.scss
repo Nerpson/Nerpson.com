@@ -9,18 +9,25 @@
         position: relative;
         padding: $space;
         background-color: $linkBoxColor;
-        border-left: solid 2.5px $mainColor;
+        border-left: solid 2.5px $secondaryColor;
         box-shadow: none;
         cursor: pointer;
         transition: all 0.2s ease;
 
         &:hover {
+            background-color: $linkBoxColorHover;
             box-shadow: 0 0 40px -20px black;
-            border-left: solid 2.5px $secondaryColor;
+            border-left: solid 2.5px $mainColor;
         }
 
-        span {
+        span.title {
+            display: block;
+            font-size: 1.25rem;
+        }
+
+        span.description {
             font-size: 0.75rem;
+            color: $secondaryTextColor;
         }
 
         .bg-icon {

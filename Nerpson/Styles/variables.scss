@@ -6,8 +6,11 @@ $space: 20px;
 
 $bgColor: #111;
 $mainTextColor: #fff;
+$secondaryTextColor: #ddd;
 $panelColor: #222;
 $linkBoxColor: #333;
+$linkBoxColorHover: #383838;
 $mainColor: #0ef;
 $secondaryColor: #04f;
 $gradient: linear-gradient(to right, $secondaryColor, $mainColor);
+$gradientToWhite: linear-gradient(to right, $secondaryColor, white);

@@ -26,5 +26,9 @@
   {
     "outputFile": "Components/LinksCollection.razor.css",
     "inputFile": "Components/LinksCollection.razor.scss"
+  },
+  {
+    "outputFile": "Pages/Home.razor.css",
+    "inputFile": "Pages/Home.razor.scss"
   }
 ]
