@@ -1,0 +1,136 @@
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-color: #0071c1;
+$btn-primary-bg: #1b6ec2;
+$btn-primary-border: #1861ac;
+$focus-shadow-color: #258cfb;
+$valid-outline-color: #26b050;
+$error-color: red;
+$blazor-error-bg: lightyellow;
+$error-text-color: white;
+$loading-stroke-color: #e0e0e0;
+$code-color: #c02d76;
+
+html,
+body {
+    font-family: $font-stack;
+}
+
+h1:focus {
+    outline: none;
+}
+
+a,
+.btn-link {
+    color: $primary-color;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-border;
+}
+
+.btn,
+.btn-link.nav-link,
+.form-control,
+.form-check-input {
+    &:focus, &:active:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem $focus-shadow-color;
+    }
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type='checkbox']) {
+    outline: 1px solid $valid-outline-color;
+}
+
+.invalid {
+    outline: 1px solid $error-color;
+}
+
+.validation-message {
+    color: $error-color;
+}
+
+#blazor-error-ui {
+    color-scheme: light only;
+    background: $blazor-error-bg;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+}
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,...) no-repeat 1rem/1.8rem, #b32121;
+    padding: 1rem 1rem 1rem 3.7rem;
+    color: $error-text-color;
+
+    &::after {
+        content: 'An error has occurred.';
+    }
+}
+
+.loading-progress {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 20vh auto 1rem auto;
+
+    circle {
+        fill: none;
+        stroke: $loading-stroke-color;
+        stroke-width: 0.6rem;
+        transform-origin: 50% 50%;
+        transform: rotate(-90deg);
+
+        &:last-child {
+            stroke: $btn-primary-bg;
+            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+            transition: stroke-dasharray 0.05s ease-in-out;
+        }
+    }
+}
+
+.loading-progress-text {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+
+    &::after {
+        content: var(--blazor-load-percentage-text, 'Loading');
+    }
+}
+
+code {
+    color: $code-color;
+}
+
+.form-floating {
+    > .form-control-plaintext::placeholder, > .form-control::placeholder {
+        color: var(--bs-secondary-color);
+        text-align: end;
+    }
+
+    > .form-control-plaintext:focus::placeholder,
+    > .form-control:focus::placeholder {
+        text-align: start;
+    }
+}

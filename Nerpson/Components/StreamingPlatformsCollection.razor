@@ -1,0 +1,10 @@
+﻿@using Nerpson.Models
+
+<div class="streaming-platforms-collection">
+	@foreach (var profile in Profiles)
+	{
+		<a class="streaming-platform" href="@profile.Url" target="_blank" title=@profile.Platform.GetDisplayName()>
+			<i class=@profile.Platform.GetFontAwesomeIconClass()></i>
+		</a>
+	}
+</div>

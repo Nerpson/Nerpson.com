@@ -1,0 +1,12 @@
+﻿@using Nerpson.Components
+@using Nerpson.Services
+@inject StreamingPlatformService StreamingPlatformService
+@inject SocialNetworkService SocialNetworkService
+
+<header>
+	<h1>Nerpson</h1>
+	<div class="other-websites">
+		<StreamingPlatformsCollection Profiles=@StreamingPlatformService.Profiles />
+		<SocialNetworksCollection Profiles=@SocialNetworkService.Profiles />
+	</div>
+</header>

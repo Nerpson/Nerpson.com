@@ -1,0 +1,17 @@
+@import '../Styles/variables';
+
+.social-networks-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .social-network {
+        font-size: 2rem;
+
+        &::before {
+            display: none;
+        }
+    }
+}

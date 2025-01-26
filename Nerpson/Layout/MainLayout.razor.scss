@@ -1,0 +1,18 @@
+@import '../Styles/variables.scss';
+
+main {
+    margin: 2*$space auto;
+    padding: $space;
+    width: 800px;
+    color: $mainTextColor;
+    background-color: $panelColor;
+
+    &::before {
+        content: '';
+        display: block;
+        margin: -$space 0 -$space 0;
+        height: 5px;
+        background: $gradient;
+        margin-bottom: $space;
+    }
+}

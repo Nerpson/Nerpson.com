@@ -1,0 +1,51 @@
+@use 'blazor';
+@import '../../Styles/variables';
+
+@font-face {
+    font-family: 'Pristina';
+    src: url('../fonts/Pristina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: $bgColor;
+    color: $mainTextColor;
+}
+
+h1 {
+    font-family: 'Pristina', sans-serif;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    position: relative;
+    background: $gradient;
+    color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 0.08em;
+        width: 100%;
+        bottom: -0.08em;
+        background: $gradient;
+    }
+
+    &:hover {
+        color: transparent;
+    }
+}

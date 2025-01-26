@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "Layout/MainLayout.razor.css",
+    "inputFile": "Layout/MainLayout.razor.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/app.css",
+    "inputFile": "wwwroot/css/app.scss"
+  },
+  {
+    "outputFile": "Components/StreamingPlatformsCollection.razor.css",
+    "inputFile": "Components/StreamingPlatformsCollection.razor.scss"
+  },
+  {
+    "outputFile": "Components/Header.razor.css",
+    "inputFile": "Components/Header.razor.scss"
+  },
+  {
+    "outputFile": "Components/SocialNetworksCollection.razor.css",
+    "inputFile": "Components/SocialNetworksCollection.razor.scss"
+  }
+]

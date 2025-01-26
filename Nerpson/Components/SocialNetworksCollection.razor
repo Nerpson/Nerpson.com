@@ -1,0 +1,10 @@
+﻿@using Nerpson.Models
+
+<div class="social-networks-collection">
+	@foreach (var profile in Profiles)
+	{
+		<a class="social-network" href="@profile.Url" target="_blank" title=@profile.Network.GetDisplayName()>
+			<i class=@profile.Network.GetFontAwesomeIconClass()></i>
+		</a>
+	}
+</div>

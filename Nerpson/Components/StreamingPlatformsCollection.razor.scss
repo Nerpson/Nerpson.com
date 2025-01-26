@@ -1,0 +1,31 @@
+@import '../Styles/variables';
+
+.streaming-platforms-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .streaming-platform {
+        font-size: 2rem;
+
+        &::before {
+            display: none;
+        }
+
+        i.fa-brands.fa-tidal {
+            transform: translateY(5px);
+            width: 2rem;
+            height: 2rem;
+            background: $gradient;
+            mask: url('../images/tidal.svg') 0 0/2rem 2rem;
+            transition: filter 0.2s ease;
+            filter: grayscale(1) brightness(100);
+
+            &:hover {
+                filter: grayscale(0) brightness();
+            }
+        }
+    }
+}

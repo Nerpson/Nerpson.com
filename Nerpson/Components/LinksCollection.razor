@@ -1,0 +1,6 @@
+﻿<div class="links-collection">
+	@foreach (var link in Links)
+	{
+		<a href="@link.Url" target="_blank" title=@link.Title><i class=@link.FontAwesomeIconClass></i></a>
+	}
+</div>
