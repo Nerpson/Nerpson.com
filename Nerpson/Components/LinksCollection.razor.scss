@@ -7,7 +7,7 @@
 
     .link {
         position: relative;
-        padding: $space;
+        padding: $space 4*$space $space $space;
         background-color: $linkBoxColor;
         border-left: solid 2.5px $secondaryColor;
         box-shadow: none;
@@ -27,6 +27,7 @@
 
         span.description {
             font-size: 0.75rem;
+            text-align: justify;
             color: $secondaryTextColor;
         }
 
