@@ -6,6 +6,7 @@
     gap: 2*$space;
 
     .link {
+        position: relative;
         padding: $space;
         background-color: $linkBoxColor;
         border-left: solid 2.5px $mainColor;
@@ -20,6 +21,13 @@
 
         span {
             font-size: 0.75rem;
+        }
+
+        .bg-icon {
+            position: absolute;
+            inset: $space $space $space auto;
+            font-size: 40px;
+            color: rgba(white, 0.5);
         }
     }
 }

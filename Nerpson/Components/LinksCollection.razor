@@ -7,6 +7,9 @@
 		<div class="link" @onclick="() => OpenLinkInNewTab(link.Url)">
 			<h3>@link.Title</h3>
 			<span>@link.Description</span>
+			<div class="bg-icon">
+				<i class=@link.FontAwesomeIconClass></i>
+			</div>
 		</div>
 	}
 </div>
