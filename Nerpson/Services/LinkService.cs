@@ -18,6 +18,13 @@ namespace Nerpson.Services
 		public LinkService()
 		{
 			Links.Add(new Link(
+				"Third preview of The Abyss EP",
+				"https://go.nerpson.com/ig-the-abyss-ep-preview-3",
+				"Release day is approaching! Check out the third preview of The Abyss EP on Instagram.",
+				"fa-brands fa-instagram"
+			));
+
+			Links.Add(new Link(
 				"Second preview of The Abyss EP",
 				"https://go.nerpson.com/ig-the-abyss-ep-preview-2",
 				"Heat up the hype for The Abyss EP with a preview of 'Resurgence' on Instagram.",
