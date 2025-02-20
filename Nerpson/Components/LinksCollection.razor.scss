@@ -3,7 +3,7 @@
 .links-collection {
     display: flex;
     flex-direction: column;
-    gap: 2*$space;
+    gap: $space;
 
     .link {
         position: relative;
