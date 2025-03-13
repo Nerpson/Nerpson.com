@@ -1,4 +1,5 @@
-﻿using Nerpson.Models;
+﻿using System.Net.Http.Json;
+using Nerpson.Models;
 
 namespace Nerpson.Services
 {
@@ -7,36 +8,38 @@ namespace Nerpson.Services
 	/// </summary>
 	public class LinkService
 	{
+		private readonly HttpClient _httpClient;
+
 		/// <summary>
 		/// Gets the list of links.
 		/// </summary>
-		public List<Link> Links { get; private set; } = new();
+		public List<Link> Links { get; private set; } = [];
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="LinkService"/> class.
 		/// </summary>
-		public LinkService()
+		/// <param name="httpClientFactory">The factory to use to create an <see cref="HttpClient"/>.</param>
+		public LinkService(IHttpClientFactory httpClientFactory)
 		{
-			Links.Add(new Link(
-				"Third preview of The Abyss EP",
-				"https://go.nerpson.com/ig-the-abyss-ep-preview-3",
-				"Release day is approaching! Check out the third preview of The Abyss EP on Instagram.",
-				"fa-brands fa-instagram"
-			));
+			_httpClient = httpClientFactory.CreateClient(nameof(LinkService));
+		}
 
-			Links.Add(new Link(
-				"Second preview of The Abyss EP",
-				"https://go.nerpson.com/ig-the-abyss-ep-preview-2",
-				"Heat up the hype for The Abyss EP with a preview of 'Resurgence' on Instagram.",
-				"fa-brands fa-instagram"
-			));
-
-			Links.Add(new Link(
-				"First preview of The Abyss EP",
-				"https://go.nerpson.com/ig-the-abyss-ep-preview",
-				"Check out the first preview of The Abyss EP on Instagram.",
-				"fa-brands fa-instagram"
-			));
+		/// <summary>
+		/// Loads the links from the JSON file.
+		/// </summary>
+		/// <returns>A task that represents the asynchronous operation.</returns>
+		public async Task LoadLinksAsync()
+		{
+			try
+			{
+				Links = await _httpClient.GetFromJsonAsync<List<Link>>("data/links.json") ?? [];
+				Console.WriteLine("Links loaded successfully. First link icon: " + Links[0].FontAwesomeIconClass);
+			}
+			catch (OperationCanceledException)
+			{
+				// The operation was canceled, so we'll just return an empty list.
+				Links = [];
+			}
 		}
 	}
 }
