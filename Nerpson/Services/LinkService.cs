@@ -33,7 +33,6 @@ namespace Nerpson.Services
 			try
 			{
 				Links = await _httpClient.GetFromJsonAsync<List<Link>>("data/links.json") ?? [];
-				Console.WriteLine("Links loaded successfully. First link icon: " + Links[0].FontAwesomeIconClass);
 			}
 			catch (OperationCanceledException)
 			{
