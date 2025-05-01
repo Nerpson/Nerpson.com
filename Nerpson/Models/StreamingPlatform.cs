@@ -27,7 +27,7 @@ public static class StreamingPlatformExtensions
 		StreamingPlatform.Spotify => "Spotify",
 		StreamingPlatform.AppleMusic => "Apple Music",
 		StreamingPlatform.SoundCloud => "SoundCloud",
-		StreamingPlatform.YouTubeMusic => "YouTube",
+		StreamingPlatform.YouTubeMusic => "YouTube Music",
 		StreamingPlatform.Tidal => "Tidal",
 		StreamingPlatform.Deezer => "Deezer",
 		StreamingPlatform.AmazonMusic => "Amazon Music",
