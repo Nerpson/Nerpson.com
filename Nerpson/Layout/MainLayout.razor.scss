@@ -5,6 +5,7 @@ main {
     margin: 2*$space auto;
     padding: $space+5px $space $space $space;
     width: 800px;
+    max-width: 100%;
     color: $mainTextColor;
     background-color: $panelColor;
 
